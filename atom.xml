@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>dave&#39;s reads worth sharing</title>
+  
+  <subtitle>Data Science, Machine Learning, Artificial Intelligence, Visualization, Complex Systems.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.sixhat.net/"/>
+  <updated>2018-11-06T17:19:32.000Z</updated>
+  <id>https://www.sixhat.net/</id>
+  
+  <author>
+    <name>David Sousa-Rodrigues</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Why Are Ants So Smart?</title>
+    <link href="https://www.sixhat.net/article/computer-science/2018/Why-Are-Ants-So-Smart.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2018/Why-Are-Ants-So-Smart.html</id>
+    <published>2018-11-06T17:11:00.000Z</published>
+    <updated>2018-11-06T17:19:32.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1811.00590&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Modeling tropotaxis in ant colonies: recruitment and trail form
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="neural networks" scheme="https://www.sixhat.net/tags/neural-networks/"/>
+    
+      <category term="ants" scheme="https://www.sixhat.net/tags/ants/"/>
+    
+      <category term="tropotaxis" scheme="https://www.sixhat.net/tags/tropotaxis/"/>
+    
+      <category term="ant colonies" scheme="https://www.sixhat.net/tags/ant-colonies/"/>
+    
+      <category term="audio" scheme="https://www.sixhat.net/tags/audio/"/>
+    
+      <category term="rnn" scheme="https://www.sixhat.net/tags/rnn/"/>
+    
+      <category term="deep learning" scheme="https://www.sixhat.net/tags/deep-learning/"/>
+    
+      <category term="topology" scheme="https://www.sixhat.net/tags/topology/"/>
+    
+      <category term="hci" scheme="https://www.sixhat.net/tags/hci/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sunday Networks on Arxiv</title>
+    <link href="https://www.sixhat.net/article/computer-science/2018/Sunday-networks-on-arxiv.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2018/Sunday-networks-on-arxiv.html</id>
+    <published>2018-11-04T15:37:00.000Z</published>
+    <updated>2018-11-04T15:41:14.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Nothing to do on a raining Sunday afternoon? I was going through the CS section of &lt;a href=&quot;https://arxiv.org/list/cs/new&quot; target=&quot;_blank
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="speech synthesis" scheme="https://www.sixhat.net/tags/speech-synthesis/"/>
+    
+      <category term="sound" scheme="https://www.sixhat.net/tags/sound/"/>
+    
+      <category term="generative networks" scheme="https://www.sixhat.net/tags/generative-networks/"/>
+    
+      <category term="cnn" scheme="https://www.sixhat.net/tags/cnn/"/>
+    
+      <category term="neural networks" scheme="https://www.sixhat.net/tags/neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Machine Learning News</title>
+    <link href="https://www.sixhat.net/article/computer-science/2018/Machine-Learning-news.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2018/Machine-Learning-news.html</id>
+    <published>2018-11-03T22:16:50.000Z</published>
+    <updated>2018-11-03T23:18:08.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/uber-introduces-pyml-their-secret-weapon-for-rapid-machine-learning-development-c0f40009a617&quot; tar
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="Machine Learning" scheme="https://www.sixhat.net/tags/Machine-Learning/"/>
+    
+      <category term="Uber" scheme="https://www.sixhat.net/tags/Uber/"/>
+    
+      <category term="PyML" scheme="https://www.sixhat.net/tags/PyML/"/>
+    
+      <category term="Artificial Intelligence" scheme="https://www.sixhat.net/tags/Artificial-Intelligence/"/>
+    
+      <category term="audio systems" scheme="https://www.sixhat.net/tags/audio-systems/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Some Interesting Tek Readings</title>
+    <link href="https://www.sixhat.net/article/web/2018/Some-interesting-tek-readings.html"/>
+    <id>https://www.sixhat.net/article/web/2018/Some-interesting-tek-readings.html</id>
+    <published>2018-06-30T22:34:26.000Z</published>
+    <updated>2018-06-30T22:47:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://noti.st/rar/mz1rIY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Golden Rules of Typography on the Web&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ha
+      
+    
+    </summary>
+    
+      <category term="web" scheme="https://www.sixhat.net/categories/web/"/>
+    
+    
+      <category term="javascript" scheme="https://www.sixhat.net/tags/javascript/"/>
+    
+      <category term="html" scheme="https://www.sixhat.net/tags/html/"/>
+    
+      <category term="css" scheme="https://www.sixhat.net/tags/css/"/>
+    
+      <category term="performance" scheme="https://www.sixhat.net/tags/performance/"/>
+    
+      <category term="ar/vr" scheme="https://www.sixhat.net/tags/ar-vr/"/>
+    
+      <category term="machine vision" scheme="https://www.sixhat.net/tags/machine-vision/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Why Is the for Loop Faster in This Javascript?</title>
+    <link href="https://www.sixhat.net/article/programming/2018/Why-is-the-for-loop-faster-in-this-Javascript.html"/>
+    <id>https://www.sixhat.net/article/programming/2018/Why-is-the-for-loop-faster-in-this-Javascript.html</id>
+    <published>2018-06-12T21:27:32.000Z</published>
+    <updated>2018-06-12T22:37:07.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve measured and tested and what not &lt;a href=&quot;https://www.sixhat.net/comparing-javascript-loops-performance-for-do-while-for-in.html&quot;&gt;ja
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://www.sixhat.net/categories/programming/"/>
+    
+    
+      <category term="javascript" scheme="https://www.sixhat.net/tags/javascript/"/>
+    
+      <category term="loops" scheme="https://www.sixhat.net/tags/loops/"/>
+    
+      <category term="arrays" scheme="https://www.sixhat.net/tags/arrays/"/>
+    
+      <category term="testing" scheme="https://www.sixhat.net/tags/testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quick Way to Use Jeromq in Eclipse</title>
+    <link href="https://www.sixhat.net/article/programming/2018/Quick-way-to-use-jeromq-in-eclipse.html"/>
+    <id>https://www.sixhat.net/article/programming/2018/Quick-way-to-use-jeromq-in-eclipse.html</id>
+    <published>2018-05-21T10:23:13.000Z</published>
+    <updated>2018-05-21T10:28:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;Download a &lt;strong&gt;jeromq JAR&lt;/strong&gt; from the maven repository (current version 0.4.3) &lt;a href=&quot;https://mvnrepository.com/artifac
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://www.sixhat.net/categories/programming/"/>
+    
+    
+      <category term="java" scheme="https://www.sixhat.net/tags/java/"/>
+    
+      <category term="jeromq" scheme="https://www.sixhat.net/tags/jeromq/"/>
+    
+      <category term="zeromq" scheme="https://www.sixhat.net/tags/zeromq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lemon</title>
+    <link href="https://www.sixhat.net/article/animation/2018/Lemon.html"/>
+    <id>https://www.sixhat.net/article/animation/2018/Lemon.html</id>
+    <published>2018-05-19T21:44:56.000Z</published>
+    <updated>2018-05-19T21:47:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p data-height=&quot;638&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;JvwzgN&quot; data-default-tab=&quot;result&quot; data-user=&quot;sixhat&quot; data-embed-version=&quot;2
+      
+    
+    </summary>
+    
+      <category term="animation" scheme="https://www.sixhat.net/categories/animation/"/>
+    
+    
+      <category term="animation" scheme="https://www.sixhat.net/tags/animation/"/>
+    
+      <category term="pug" scheme="https://www.sixhat.net/tags/pug/"/>
+    
+      <category term="sass" scheme="https://www.sixhat.net/tags/sass/"/>
+    
+      <category term="css3" scheme="https://www.sixhat.net/tags/css3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>This Is a Kafkian World. May 17, 2018</title>
+    <link href="https://www.sixhat.net/article/reading/2018/This-is-a-kafkian-world-May-17-2018.html"/>
+    <id>https://www.sixhat.net/article/reading/2018/This-is-a-kafkian-world-May-17-2018.html</id>
+    <published>2018-05-17T21:22:58.000Z</published>
+    <updated>2018-05-17T21:26:24.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tpspO9K28PM&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Four Distributed Systems Architectural Patterns by T
+      
+    
+    </summary>
+    
+      <category term="reading" scheme="https://www.sixhat.net/categories/reading/"/>
+    
+    
+      <category term="links" scheme="https://www.sixhat.net/tags/links/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Take Five, Sunday, May 13</title>
+    <link href="https://www.sixhat.net/article/uncategorized/2018/Take-five-Sunday-May-13.html"/>
+    <id>https://www.sixhat.net/article/uncategorized/2018/Take-five-Sunday-May-13.html</id>
+    <published>2018-05-13T21:35:27.000Z</published>
+    <updated>2018-05-13T21:41:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://supercollider.github.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Supercollider&lt;/a&gt; - This could be such a great tool if it didn’
+      
+    
+    </summary>
+    
+    
+      <category term="links" scheme="https://www.sixhat.net/tags/links/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Saturday, 12 May</title>
+    <link href="https://www.sixhat.net/article/uncategorized/2018/Sun-12-May.html"/>
+    <id>https://www.sixhat.net/article/uncategorized/2018/Sun-12-May.html</id>
+    <published>2018-05-12T22:20:54.000Z</published>
+    <updated>2018-05-12T22:36:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2018/05/using-the-web-with-javascript-turned-off/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;I Used The We
+      
+    
+    </summary>
+    
+    
+      <category term="links" scheme="https://www.sixhat.net/tags/links/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Help! Need an Index Card and Contacts Manager Apps for OS X</title>
+    <link href="https://www.sixhat.net/article/software/2018/Help-Need-an-Index-Card-and-Contacts-Manager-apps-for-OS-X.html"/>
+    <id>https://www.sixhat.net/article/software/2018/Help-Need-an-Index-Card-and-Contacts-Manager-apps-for-OS-X.html</id>
+    <published>2018-02-01T11:55:35.000Z</published>
+    <updated>2018-02-01T12:13:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve rely on physical index cards for many tasks related to managing information, but I’d like to have the same functionality on the desk
+      
+    
+    </summary>
+    
+      <category term="software" scheme="https://www.sixhat.net/categories/software/"/>
+    
+    
+      <category term="contacts" scheme="https://www.sixhat.net/tags/contacts/"/>
+    
+      <category term="osx" scheme="https://www.sixhat.net/tags/osx/"/>
+    
+      <category term="index cards" scheme="https://www.sixhat.net/tags/index-cards/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Big Data, Digitization, and the Social Change: Big Data Ubiquity Symposium</title>
+    <link href="https://www.sixhat.net/article/computer-science/2017/Big-Data-Digitization-and-the-Social-Change-Big-Data-Ubiquity-symposium.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2017/Big-Data-Digitization-and-the-Social-Change-Big-Data-Ubiquity-symposium.html</id>
+    <published>2017-12-22T15:57:36.000Z</published>
+    <updated>2017-12-22T16:14:37.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’m very happy that Ubiquity just started publishing &lt;a href=&quot;http://ubiquity.acm.org/article.cfm?id=3158335&quot; target=&quot;_blank&quot; rel=&quot;noopen
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="big data" scheme="https://www.sixhat.net/tags/big-data/"/>
+    
+      <category term="ubiquity" scheme="https://www.sixhat.net/tags/ubiquity/"/>
+    
+      <category term="acm" scheme="https://www.sixhat.net/tags/acm/"/>
+    
+      <category term="digitization" scheme="https://www.sixhat.net/tags/digitization/"/>
+    
+      <category term="symposia" scheme="https://www.sixhat.net/tags/symposia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A Collection of Great Visuals on Sort Algorithms</title>
+    <link href="https://www.sixhat.net/article/computer-science/2017/A-collection-of-great-visuals-on-sort-algorithms.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2017/A-collection-of-great-visuals-on-sort-algorithms.html</id>
+    <published>2017-10-28T10:35:10.000Z</published>
+    <updated>2017-10-31T09:55:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Sorting algorithms are one of those basic concepts that every CS course has, and that act as a great pedagogic tools for teaching student
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="sort algorithms" scheme="https://www.sixhat.net/tags/sort-algorithms/"/>
+    
+      <category term="visualization" scheme="https://www.sixhat.net/tags/visualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Default Calendar APP Just Doesn&#39;t Cut It Anymore</title>
+    <link href="https://www.sixhat.net/article/android/2017/Android-default-Calendar-APP-just-doesn-t-cut-it-anymore.html"/>
+    <id>https://www.sixhat.net/article/android/2017/Android-default-Calendar-APP-just-doesn-t-cut-it-anymore.html</id>
+    <published>2017-09-11T13:14:02.000Z</published>
+    <updated>2017-09-11T13:36:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;svg style=&quot;display:block;float:right; margin-left:15px&quot; viewbox=&quot;2.1427793502807617 1.2261229753494263 18.877357482910156 19.23363876342773
+      
+    
+    </summary>
+    
+      <category term="android" scheme="https://www.sixhat.net/categories/android/"/>
+    
+    
+      <category term="calendar" scheme="https://www.sixhat.net/tags/calendar/"/>
+    
+      <category term="app" scheme="https://www.sixhat.net/tags/app/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello New Static World</title>
+    <link href="https://www.sixhat.net/article/uncategorized/2017/hello-world.html"/>
+    <id>https://www.sixhat.net/article/uncategorized/2017/hello-world.html</id>
+    <published>2017-08-31T21:13:04.000Z</published>
+    <updated>2017-09-01T11:37:12.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;svg style=&quot;float:right; margin-left:15px&quot; viewbox=&quot;34.70000457763672 4.8000006675720215 90.70001220703125 150.29998779296875&quot; width=&quot;90.7&quot; 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
