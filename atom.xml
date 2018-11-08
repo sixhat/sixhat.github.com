@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sixhat.net/"/>
-  <updated>2018-11-06T17:19:32.000Z</updated>
+  <updated>2018-11-08T21:53:13.000Z</updated>
   <id>https://www.sixhat.net/</id>
   
   <author>
@@ -15,6 +15,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown Is the &lt;i&gt;De Facto&lt;/i&gt; Language for Writing in the XXI Century </title>
+    <link href="https://www.sixhat.net/article/markdown/2018/Markdown-is-the-de-facto-language-for-writing-in-the-XXI-century.html"/>
+    <id>https://www.sixhat.net/article/markdown/2018/Markdown-is-the-de-facto-language-for-writing-in-the-XXI-century.html</id>
+    <published>2018-11-08T21:24:00.000Z</published>
+    <updated>2018-11-08T21:53:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve talked before about how much I use Markdown for my day to day writing • Heck, markdown powered this blog for a long time, even while
+      
+    
+    </summary>
+    
+      <category term="markdown" scheme="https://www.sixhat.net/categories/markdown/"/>
+    
+    
+      <category term="nvalt" scheme="https://www.sixhat.net/tags/nvalt/"/>
+    
+      <category term="node" scheme="https://www.sixhat.net/tags/node/"/>
+    
+      <category term="hexo" scheme="https://www.sixhat.net/tags/hexo/"/>
+    
+      <category term="nodejs" scheme="https://www.sixhat.net/tags/nodejs/"/>
+    
+      <category term="typora" scheme="https://www.sixhat.net/tags/typora/"/>
+    
+      <category term="revealjs" scheme="https://www.sixhat.net/tags/revealjs/"/>
+    
+      <category term="reveal-md" scheme="https://www.sixhat.net/tags/reveal-md/"/>
+    
+      <category term="jupyter" scheme="https://www.sixhat.net/tags/jupyter/"/>
+    
+      <category term="rsync" scheme="https://www.sixhat.net/tags/rsync/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Aesthetics With Deep Learning</title>
+    <link href="https://www.sixhat.net/article/computer-science/2018/aesthetics-with-deep-learning.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2018/aesthetics-with-deep-learning.html</id>
+    <published>2018-11-07T10:12:00.000Z</published>
+    <updated>2018-11-07T10:24:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/rose-01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://devblogs.nvidia.com/understanding-aesthetics-deep-learning/&quot; target=&quot;_blan
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="deep learning" scheme="https://www.sixhat.net/tags/deep-learning/"/>
+    
+      <category term="aesthetics" scheme="https://www.sixhat.net/tags/aesthetics/"/>
+    
+      <category term="machine learning" scheme="https://www.sixhat.net/tags/machine-learning/"/>
+    
+      <category term="design" scheme="https://www.sixhat.net/tags/design/"/>
+    
+      <category term="hypergraphs" scheme="https://www.sixhat.net/tags/hypergraphs/"/>
+    
+      <category term="clustering" scheme="https://www.sixhat.net/tags/clustering/"/>
+    
+  </entry>
   
   <entry>
     <title>Why Are Ants So Smart?</title>
