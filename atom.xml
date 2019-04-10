@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sixhat.net/"/>
-  <updated>2018-11-08T21:53:13.000Z</updated>
+  <updated>2019-04-10T14:13:48.341Z</updated>
   <id>https://www.sixhat.net/</id>
   
   <author>
@@ -15,6 +15,231 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Moving to Github</title>
+    <link href="https://www.sixhat.net/article/internet/2019/Moving-To-Github.html"/>
+    <id>https://www.sixhat.net/article/internet/2019/Moving-To-Github.html</id>
+    <published>2019-04-10T14:09:00.000Z</published>
+    <updated>2019-04-10T14:13:48.341Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I’ve been wanting to move my web assets to Github for a long time. Partially because I’m downsizing my web presence (as many have noticed
+      
+    
+    </summary>
+    
+      <category term="internet" scheme="https://www.sixhat.net/categories/internet/"/>
+    
+    
+      <category term="github" scheme="https://www.sixhat.net/tags/github/"/>
+    
+      <category term="versioning" scheme="https://www.sixhat.net/tags/versioning/"/>
+    
+      <category term="hosting" scheme="https://www.sixhat.net/tags/hosting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Plotting More Than One Data Series in One-Liner</title>
+    <link href="https://www.sixhat.net/article/data-science/2019/Plotting-more-than-one-data-series-in-one-line.html"/>
+    <id>https://www.sixhat.net/article/data-science/2019/Plotting-more-than-one-data-series-in-one-line.html</id>
+    <published>2019-01-22T15:22:07.000Z</published>
+    <updated>2019-01-24T10:15:17.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;picture&gt;&lt;source srcset=&quot;/images/matplot-example.webp&quot; type=&quot;image/webp&quot;&gt;&lt;img src=&quot;/images/matplot-example.png&quot; alt=&quot;plot of mulitple data s
+      
+    
+    </summary>
+    
+      <category term="data science" scheme="https://www.sixhat.net/categories/data-science/"/>
+    
+    
+      <category term="rcran" scheme="https://www.sixhat.net/tags/rcran/"/>
+    
+      <category term="plots" scheme="https://www.sixhat.net/tags/plots/"/>
+    
+      <category term="R" scheme="https://www.sixhat.net/tags/R/"/>
+    
+      <category term="tidyr" scheme="https://www.sixhat.net/tags/tidyr/"/>
+    
+      <category term="matplot" scheme="https://www.sixhat.net/tags/matplot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Processing Community Day @Lisboa</title>
+    <link href="https://www.sixhat.net/article/event/2019/Processing-Community-Day-Lisboa.html"/>
+    <id>https://www.sixhat.net/article/event/2019/Processing-Community-Day-Lisboa.html</id>
+    <published>2019-01-09T10:32:00.000Z</published>
+    <updated>2019-01-22T16:11:15.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;picture&gt;&lt;source srcset=&quot;/images/processing-community-day.webp&quot; type=&quot;image/webp&quot;&gt;&lt;img src=&quot;/images/processing-community-day.jpg&quot; alt=&quot;Proce
+      
+    
+    </summary>
+    
+      <category term="event" scheme="https://www.sixhat.net/categories/event/"/>
+    
+    
+      <category term="esad" scheme="https://www.sixhat.net/tags/esad/"/>
+    
+      <category term="bml" scheme="https://www.sixhat.net/tags/bml/"/>
+    
+      <category term="p5js" scheme="https://www.sixhat.net/tags/p5js/"/>
+    
+      <category term="processing" scheme="https://www.sixhat.net/tags/processing/"/>
+    
+      <category term="lisboa" scheme="https://www.sixhat.net/tags/lisboa/"/>
+    
+      <category term="coding" scheme="https://www.sixhat.net/tags/coding/"/>
+    
+      <category term="art" scheme="https://www.sixhat.net/tags/art/"/>
+    
+      <category term="creativity" scheme="https://www.sixhat.net/tags/creativity/"/>
+    
+      <category term="PCD2019" scheme="https://www.sixhat.net/tags/PCD2019/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>From Bézier 2 Turtle Graphics, All Is Smooth</title>
+    <link href="https://www.sixhat.net/article/computer-science/2018/From-Bezier-to-Turtles-Graphics-it-is-all-smooth.html"/>
+    <id>https://www.sixhat.net/article/computer-science/2018/From-Bezier-to-Turtles-Graphics-it-is-all-smooth.html</id>
+    <published>2018-12-16T18:18:00.000Z</published>
+    <updated>2018-12-16T18:25:08.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;— When everyone thinks Severless computing, someone is thinks about the pitfalls of it. &lt;a href=&quot;https://arxiv.org/abs/1812.03651&quot; target
+      
+    
+    </summary>
+    
+      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
+    
+    
+      <category term="serverless" scheme="https://www.sixhat.net/tags/serverless/"/>
+    
+      <category term="turtle graphics" scheme="https://www.sixhat.net/tags/turtle-graphics/"/>
+    
+      <category term="Bézier" scheme="https://www.sixhat.net/tags/Bezier/"/>
+    
+      <category term="generative" scheme="https://www.sixhat.net/tags/generative/"/>
+    
+      <category term="analytics" scheme="https://www.sixhat.net/tags/analytics/"/>
+    
+      <category term="computing" scheme="https://www.sixhat.net/tags/computing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>When Is Art Not Art in the Science Zoo?</title>
+    <link href="https://www.sixhat.net/article/science/2018/when-is-art-not-art.html"/>
+    <id>https://www.sixhat.net/article/science/2018/when-is-art-not-art.html</id>
+    <published>2018-11-28T15:11:00.000Z</published>
+    <updated>2019-01-22T16:13:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;picture&gt;&lt;source srcset=&quot;/images/sails-art-harmonograph.webp&quot; type=&quot;image/webp&quot;&gt;&lt;img src=&quot;/images/sails-art-harmonograph.png&quot; alt=&quot;Sails Art
+      
+    
+    </summary>
+    
+      <category term="science" scheme="https://www.sixhat.net/categories/science/"/>
+    
+    
+      <category term="art" scheme="https://www.sixhat.net/tags/art/"/>
+    
+      <category term="machine learn" scheme="https://www.sixhat.net/tags/machine-learn/"/>
+    
+      <category term="typography" scheme="https://www.sixhat.net/tags/typography/"/>
+    
+      <category term="fonts" scheme="https://www.sixhat.net/tags/fonts/"/>
+    
+      <category term="typefaces" scheme="https://www.sixhat.net/tags/typefaces/"/>
+    
+      <category term="bio-inspired" scheme="https://www.sixhat.net/tags/bio-inspired/"/>
+    
+      <category term="algorithms" scheme="https://www.sixhat.net/tags/algorithms/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Working With Data and Python</title>
+    <link href="https://www.sixhat.net/article/python/2018/Working-with-Data-and-Python.html"/>
+    <id>https://www.sixhat.net/article/python/2018/Working-with-Data-and-Python.html</id>
+    <published>2018-11-15T10:37:00.000Z</published>
+    <updated>2018-11-15T10:50:08.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Working with data, in any form, is the XXI century toolkit for any computation based job. And although I’m a fan of R for much of my data
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://www.sixhat.net/categories/python/"/>
+    
+    
+      <category term="jupyter" scheme="https://www.sixhat.net/tags/jupyter/"/>
+    
+      <category term="data science" scheme="https://www.sixhat.net/tags/data-science/"/>
+    
+      <category term="pandas" scheme="https://www.sixhat.net/tags/pandas/"/>
+    
+      <category term="numpy" scheme="https://www.sixhat.net/tags/numpy/"/>
+    
+      <category term="tensorflow" scheme="https://www.sixhat.net/tags/tensorflow/"/>
+    
+      <category term="scikit" scheme="https://www.sixhat.net/tags/scikit/"/>
+    
+      <category term="matplotlib" scheme="https://www.sixhat.net/tags/matplotlib/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reading About Podcasts - Are They Returning?</title>
+    <link href="https://www.sixhat.net/article/podcast/2018/Reading-about-Podcasts-Are-they-returning.html"/>
+    <id>https://www.sixhat.net/article/podcast/2018/Reading-about-Podcasts-Are-they-returning.html</id>
+    <published>2018-11-13T16:34:00.000Z</published>
+    <updated>2018-11-13T16:50:31.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Podcasts are near and dear to my ♥ — But I imagine some of you know this by now if you’ve been reading this blog — The New Yorker wrote a
+      
+    
+    </summary>
+    
+      <category term="podcast" scheme="https://www.sixhat.net/categories/podcast/"/>
+    
+    
+      <category term="new yorker" scheme="https://www.sixhat.net/tags/new-yorker/"/>
+    
+      <category term="longread" scheme="https://www.sixhat.net/tags/longread/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown Is the &lt;i&gt;De Facto&lt;/i&gt; Language for Writing in the XXI Century </title>
@@ -60,14 +285,13 @@
     <link href="https://www.sixhat.net/article/computer-science/2018/aesthetics-with-deep-learning.html"/>
     <id>https://www.sixhat.net/article/computer-science/2018/aesthetics-with-deep-learning.html</id>
     <published>2018-11-07T10:12:00.000Z</published>
-    <updated>2018-11-07T10:24:16.000Z</updated>
+    <updated>2019-01-22T16:11:36.000Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/images/rose-01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://devblogs.nvidia.com/understanding-aesthetics-deep-learning/&quot; target=&quot;_blan
+        &lt;picture&gt;&lt;source srcset=&quot;/images/rose-01.webp&quot; type=&quot;image/webp&quot;&gt;&lt;img src=&quot;/images/rose-01.jpg&quot; alt=&quot;Pantograph Rose&quot;&gt;&lt;/picture&gt;&lt;p&gt;&lt;a href=&quot;
       
     
     </summary>
@@ -201,8 +425,7 @@
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://noti.st/rar/mz1rIY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Golden Rules of Typography on the Web&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ha
+        &lt;p&gt;&lt;a href=&quot;https://noti.st/rar/mz1rIY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Golden Rules of Typography on the Web&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hack
       
     
     </summary>
@@ -264,8 +487,7 @@
     
       
       
-        &lt;ol&gt;
-&lt;li&gt;Download a &lt;strong&gt;jeromq JAR&lt;/strong&gt; from the maven repository (current version 0.4.3) &lt;a href=&quot;https://mvnrepository.com/artifac
+        &lt;ol&gt;&lt;li&gt;Download a &lt;strong&gt;jeromq JAR&lt;/strong&gt; from the maven repository (current version 0.4.3) &lt;a href=&quot;https://mvnrepository.com/artifact
       
     
     </summary>
@@ -399,106 +621,6 @@
       <category term="osx" scheme="https://www.sixhat.net/tags/osx/"/>
     
       <category term="index cards" scheme="https://www.sixhat.net/tags/index-cards/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Big Data, Digitization, and the Social Change: Big Data Ubiquity Symposium</title>
-    <link href="https://www.sixhat.net/article/computer-science/2017/Big-Data-Digitization-and-the-Social-Change-Big-Data-Ubiquity-symposium.html"/>
-    <id>https://www.sixhat.net/article/computer-science/2017/Big-Data-Digitization-and-the-Social-Change-Big-Data-Ubiquity-symposium.html</id>
-    <published>2017-12-22T15:57:36.000Z</published>
-    <updated>2017-12-22T16:14:37.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;I’m very happy that Ubiquity just started publishing &lt;a href=&quot;http://ubiquity.acm.org/article.cfm?id=3158335&quot; target=&quot;_blank&quot; rel=&quot;noopen
-      
-    
-    </summary>
-    
-      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
-    
-    
-      <category term="big data" scheme="https://www.sixhat.net/tags/big-data/"/>
-    
-      <category term="ubiquity" scheme="https://www.sixhat.net/tags/ubiquity/"/>
-    
-      <category term="acm" scheme="https://www.sixhat.net/tags/acm/"/>
-    
-      <category term="digitization" scheme="https://www.sixhat.net/tags/digitization/"/>
-    
-      <category term="symposia" scheme="https://www.sixhat.net/tags/symposia/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A Collection of Great Visuals on Sort Algorithms</title>
-    <link href="https://www.sixhat.net/article/computer-science/2017/A-collection-of-great-visuals-on-sort-algorithms.html"/>
-    <id>https://www.sixhat.net/article/computer-science/2017/A-collection-of-great-visuals-on-sort-algorithms.html</id>
-    <published>2017-10-28T10:35:10.000Z</published>
-    <updated>2017-10-31T09:55:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Sorting algorithms are one of those basic concepts that every CS course has, and that act as a great pedagogic tools for teaching student
-      
-    
-    </summary>
-    
-      <category term="computer science" scheme="https://www.sixhat.net/categories/computer-science/"/>
-    
-    
-      <category term="sort algorithms" scheme="https://www.sixhat.net/tags/sort-algorithms/"/>
-    
-      <category term="visualization" scheme="https://www.sixhat.net/tags/visualization/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Default Calendar APP Just Doesn&#39;t Cut It Anymore</title>
-    <link href="https://www.sixhat.net/article/android/2017/Android-default-Calendar-APP-just-doesn-t-cut-it-anymore.html"/>
-    <id>https://www.sixhat.net/article/android/2017/Android-default-Calendar-APP-just-doesn-t-cut-it-anymore.html</id>
-    <published>2017-09-11T13:14:02.000Z</published>
-    <updated>2017-09-11T13:36:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;svg style=&quot;display:block;float:right; margin-left:15px&quot; viewbox=&quot;2.1427793502807617 1.2261229753494263 18.877357482910156 19.23363876342773
-      
-    
-    </summary>
-    
-      <category term="android" scheme="https://www.sixhat.net/categories/android/"/>
-    
-    
-      <category term="calendar" scheme="https://www.sixhat.net/tags/calendar/"/>
-    
-      <category term="app" scheme="https://www.sixhat.net/tags/app/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello New Static World</title>
-    <link href="https://www.sixhat.net/article/uncategorized/2017/hello-world.html"/>
-    <id>https://www.sixhat.net/article/uncategorized/2017/hello-world.html</id>
-    <published>2017-08-31T21:13:04.000Z</published>
-    <updated>2017-09-01T11:37:12.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;svg style=&quot;float:right; margin-left:15px&quot; viewbox=&quot;34.70000457763672 4.8000006675720215 90.70001220703125 150.29998779296875&quot; width=&quot;90.7&quot; 
-      
-    
-    </summary>
-    
     
   </entry>
   
