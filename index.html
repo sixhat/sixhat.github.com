@@ -1,14 +1,382 @@
-<!DOCTYPE HTML><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><title>dave's reads worth sharing | Data Science, Machine Learning, Artificial Intelligence, Visualization, Complex Systems.</title><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://adservice.google.pt"><link rel="preconnect" href="https://googleads.g.doubleclick.net"><meta name="author" content="David Sousa-Rodrigues"><meta name="description" content="Searching the web for interesting readings that are worth sharing."><meta id="viewport" name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta property="og:site_name" content="dave's reads worth sharing"><meta property="og:image" content="/favicon.ico"><link href="/favicon.ico" rel="icon"><link rel="alternate" href="/atom.xml" title="dave's reads worth sharing" type="application/atom+xml"><link rel="stylesheet" href="/css/style.css?__inline=true" media="screen" type="text/css"></head><body><div class="content"><header><div class="site-branding"><h1 class="site-title"><a href="/">dave's reads worth sharing</a></h1><p class="site-description">Data Science, Machine Learning, Artificial Intelligence, Visualization, Complex Systems.</p></div></header><main class="site-main posts-loop"><article><h2 class="article-title"><a href="/article/internet/2019/Moving-To-Github.html"><span>Moving to Github</span></a></h2><div class="article-content"><div class="entry"><p>I’ve been wanting to move my web assets to Github for a long time. Partially because I’m downsizing my web presence (as many have noticed), and partially because of backup/versioning.</p><p>This moving is going to be multi-step process and somethings might break. But everything should be completed soon (I hope).</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/internet/">internet</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/github/">github</a><a href="/tags/versioning/">versioning</a><a href="/tags/hosting/">hosting</a></span></div></div></article><article><h2 class="article-title"><a href="/article/data-science/2019/Plotting-more-than-one-data-series-in-one-line.html"><span>Plotting More Than One Data Series in One-Liner</span></a></h2><div class="article-content"><div class="entry"><picture><source srcset="/images/matplot-example.webp" type="image/webp"><img src="/images/matplot-example.png" alt="plot of mulitple data series in R"></picture><p>I already covered several ways to plot multiple data series in the same <code>R</code> plot, either using <a href="https://www.sixhat.n`et/plotting-multiple-data-series-in-r.html" target="_blank" rel="noopener"><strong>plot, points and lines</strong></a> or using <a href="https://www.sixhat.net/how-to-plot-multpile-data-series-with-ggplot.html"><strong>ggplot</strong></a> and using <strong>facets</strong>. What I didn’t show was probably the easiest (and I mean easiest), way to plot all data series in one plot. Using <strong>matplot</strong>!</p><p><strong>matplot</strong> is part of the <strong>graphics</strong> library and therefore is installed during your normal <code>R</code> installation. It does not need any further installation and you can use it with the usual plot parameters.</p><p>Assuming that you have a data frame <strong>df</strong> with <code>N</code> columns and <code>M</code> observations and that you want to plot all columns against the first column that will provide the <code>x</code> points.</p><pre><code>matplot(df[,1], df[, 2:ncol(df)], pch=19)
-</code></pre><p>The above command will plot multiple data series in <code>R</code> in the same plot without further problems and producing the above picture.</p><p>The only condition to plot data series with the above command is that the data frame needs to be wide format (and usually it is).</p><p>If your data is in the <em>narrow</em> format you need to <a href="https://www.sixhat.net/how-to-reshape-data-in-r.html">pivot the data to wide layout</a> before you can plot multiple data series. In <code>R</code>, the conversion between <em>wide</em> and <em>narrow</em> layouts of the data can be accomplished using the <a href="https://tidyr.tidyverse.org/" target="_blank" rel="noopener"><strong>tidyr</strong></a> package.</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/data-science/">data science</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/rcran/">rcran</a><a href="/tags/plots/">plots</a><a href="/tags/R/">R</a><a href="/tags/tidyr/">tidyr</a><a href="/tags/matplot/">matplot</a></span></div></div></article><article><h2 class="article-title"><a href="/article/event/2019/Processing-Community-Day-Lisboa.html"><span>Processing Community Day @Lisboa</span></a></h2><div class="article-content"><div class="entry"><picture><source srcset="/images/processing-community-day.webp" type="image/webp"><img src="/images/processing-community-day.jpg" alt="Processing Community Day @ Lisboa 2019"></picture><p>Em janeiro de 2019 decorre mundialmente o PCD (<a href="https://day.processing.org)" target="_blank" rel="noopener">https://day.processing.org)</a>. A fundação Processing agrega o maior número mundial de designers e artistas interessados em programação para a expressividade individual e é responsável pelo desenvolvimento open source das linguagens Processing (<a href="https://processing.org)" target="_blank" rel="noopener">https://processing.org)</a>, P5*js (<a href="https://p5js.org)" target="_blank" rel="noopener">https://p5js.org)</a>, entre outras, para programação visual e artística.</p><p>O moto do processing community day é a <em>celebração da arte, o design, da programação e da diversidade.</em></p><p>Este ano o <a href="http://processing.ideiarxd.com/" target="_blank" rel="noopener">PCD vai ter uma edição em Lisboa</a>, na Biblioteca Municipal de Marvila.</p><p>No dia 18 de janeiro, pretende-se que este seja um ponto de encontro de designers, artistas e interessados, e uma exposição dos trabalhos desenvolvidos pelo os alunos da disciplina de Sistemas de Design Digital do 2º ano da Licenciatura em Design Gráfico da ESAD.CR e dos alunos de Laboratório de Projecto I do 3º ano da Licenciatura em Design Multimedia da ESAD.CR.</p><p>PROGRAMA</p><pre>11:00 Sessão de abertura
-11:15 Catarina Maçãs 
-      (Lab. Design Computacional e Visualização (CISUC))
-11:45 Tiago Martins 
-      (Lab. Design Computacional e Visualização (CISUC))
-12:15 Sessão de perguntas e respostas
-13:00 Pausa para almoço
-15:30 Inauguração da exposição
-16:00 Catarina Sampaio 
-      (Faculdade de Belas Artes da Universidade de Lisboa)
-16:30 Marta Verde (Creative Coder (ES))
-17:00 Sessão de perguntas e respostas
-18:00 Encerramento</pre><p>O evento conta com o design gráfico dos meus alunos:</p><ul class="social-nav design-grafico"><br><li><a href="https://www.instagram.com/eugenia.andrade.santos/" target="_blank" rel="noopener">Eugénia Santos</a></li><br><li><a href="https://www.instagram.com/saul_silva_ornelas/" target="_blank" rel="noopener">Saúl Ornelas</a></li><br><li><a href="https://www.instagram.com/tamirasupertramp/" target="_blank" rel="noopener">Tamira Cruz</a></li><br></ul><p>Estão todos convidados a aparecer no dia 18 de Janeiro na Biblioteca Municipal de Marvila em Lisboa.</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/event/">event</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/esad/">esad</a><a href="/tags/bml/">bml</a><a href="/tags/p5js/">p5js</a><a href="/tags/processing/">processing</a><a href="/tags/lisboa/">lisboa</a><a href="/tags/coding/">coding</a><a href="/tags/art/">art</a><a href="/tags/creativity/">creativity</a><a href="/tags/PCD2019/">PCD2019</a></span></div></div></article><article><h2 class="article-title"><a href="/article/computer-science/2018/From-Bezier-to-Turtles-Graphics-it-is-all-smooth.html"><span>From Bézier 2 Turtle Graphics, All Is Smooth</span></a></h2><div class="article-content"><div class="entry"><p>— When everyone thinks Severless computing, someone is thinks about the pitfalls of it. <a href="https://arxiv.org/abs/1812.03651" target="_blank" rel="noopener">Serverless Computing: One Step Forward, Two Steps Back</a></p><p>— One of the topics I teach to my Design students is turtle graphics. They find it intuitive and is a great approach for a starter programming course. You can find different implementations of Turtle graphics online (including my <a href="https://github.com/sixhat/utils.dave.p5.js" target="_blank" rel="noopener">Utils for P5js</a>), but <a href="https://turtletoy.net/" target="_blank" rel="noopener">Turtetoy</a> aggregates creations on a portfolio like environment.</p><p>— Another online portfolio website for art generated by code is <a href="https://shadergif.com/" target="_blank" rel="noopener">ShaderGif</a>. The structure is slightly different from Turtletoy, but … <code>horses for courses</code>.</p><p>— Bézier curves are mind bending curves, until you dig in and understand their inner works. <a href="https://raphlinus.github.io/curves/2018/12/08/euler-spiral.html" target="_blank" rel="noopener">Secrets of smooth Bézier curves</a> takes the plunge.</p><p>— And if you need pageviews, this <a href="https://minimalanalytics.com/" target="_blank" rel="noopener">Minimal Google Analytics Snippet</a> might be enough and short.</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/computer-science/">computer science</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/serverless/">serverless</a><a href="/tags/turtle-graphics/">turtle graphics</a><a href="/tags/Bezier/">Bézier</a><a href="/tags/generative/">generative</a><a href="/tags/analytics/">analytics</a><a href="/tags/computing/">computing</a></span></div></div></article><article><h2 class="article-title"><a href="/article/science/2018/when-is-art-not-art.html"><span>When Is Art Not Art in the Science Zoo?</span></a></h2><div class="article-content"><div class="entry"><picture><source srcset="/images/sails-art-harmonograph.webp" type="image/webp"><img src="/images/sails-art-harmonograph.png" alt="Sails Art Harmonograph"></picture><p>Take 1 - <a href="https://arxiv.org/abs/1811.08012" target="_blank" rel="noopener">A Comparative Study of Computational Aesthetics</a> — When is art not art? Or when can a machine make art?</p><p>A machine can classify, but always in reference to other things. Humans can classify, but they have been trained before on what makes something beautiful of not.</p><p>beautiful doesn’t mean meaningful, sometimes.</p><p>Take 2 - <a href="https://www.arun.is/blog/custom-typefaces/" target="_blank" rel="noopener">Why are tech companies making custom typefaces?</a> — An interesting read, with an historical perspective (I love timelines :-) ).</p><p>Take 3 - <a href="https://www.sciencedirect.com/science/article/pii/S2314728818300631" target="_blank" rel="noopener">Bio-inspired computing: Algorithms review, deep analysis, and the scope of applications</a> — Genetic Bee Colony (GBC) Algorithm, Fish Swarm Algorithm (FSA), Cat Swarm Optimization (CSO), Whale Optimization Algorithm (WOA), Artificial Algae Algorithm (AAA), Elephant Search Algorithm (ESA), Chicken Swarm Optimization Algorithm (CSOA), Moth flame optimization (MFO), and Grey Wolf Optimization (GWO) algorithm? You have to love this science <strong>ZOO</strong>. And you <strong>MUST</strong> read it.</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/science/">science</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/art/">art</a><a href="/tags/machine-learn/">machine learn</a><a href="/tags/typography/">typography</a><a href="/tags/fonts/">fonts</a><a href="/tags/typefaces/">typefaces</a><a href="/tags/bio-inspired/">bio-inspired</a><a href="/tags/algorithms/">algorithms</a></span></div></div></article><article><h2 class="article-title"><a href="/article/python/2018/Working-with-Data-and-Python.html"><span>Working With Data and Python</span></a></h2><div class="article-content"><div class="entry"><p>Working with data, in any form, is the XXI century toolkit for any computation based job. And although I’m a fan of R for much of my data analysis work, python comes as a close second. And if you favor python then, there are a some aspects to consider:</p><ul><li>Using <a href="https://pandas.pydata.org/" target="_blank" rel="noopener"><code>pandas</code></a> — <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" target="_blank" rel="noopener">A Gentle Visual Intro to Data Analysis in Python Using Pandas</a></li><li><a href="https://www.numpy.org/" target="_blank" rel="noopener">numpy</a> — a workhorse of data manipulation. If you have data that needs linear algebra, you’ll use numpy—even if numpy is a dependency of other package (e.g. pandas uses numpy). Check the <a href="https://docs.scipy.org/doc/numpy/user/quickstart.html" target="_blank" rel="noopener">quick start</a> of numpy if your starting out. Also, interacting with C,C++, or fortran routines is a must.</li><li>If you need to use <a href="https://www.tensorflow.org/install/" target="_blank" rel="noopener">Tensorflow, python has you covered</a>.</li><li>Working with <a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter</a> Notebooks — Everybody seems to love them. I use them for EDA (exploratory data analysis) and prototyping small ideas, but not for long complicated sessions. The burden of knowing the state of computation makes it daunting for long sessions. This comes in part from the fact that you can re-run code cells in out of page flow order. This means that you have to consider if the output you are getting is affected by code ran in another cell. But if you can’t code in a code editor, then coding in a browser might work for you. The most interesting thing in Jupyter are the different kernels. They allow you to experiment with other languages in an unified interface.</li><li><a href="https://scikit-learn.org/stable/index.html" target="_blank" rel="noopener">Scikit</a> way — Another ML library that runs on top of <a href="https://www.numpy.org/" target="_blank" rel="noopener">numpy</a>. See a trend here?</li><li>All this data is nice and all that, but you need to visualize it or it won’t be of much help. For this <a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a> is king. Almost every package will ask you to <code>import matplotlib.pyplot as plt</code> so you can plot your data with python. It has come a long way and is a <a href="https://realpython.com/python-matplotlib-guide/" target="_blank" rel="noopener">mature plotting solution</a>.</li></ul></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/python/">python</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/jupyter/">jupyter</a><a href="/tags/data-science/">data science</a><a href="/tags/pandas/">pandas</a><a href="/tags/numpy/">numpy</a><a href="/tags/tensorflow/">tensorflow</a><a href="/tags/scikit/">scikit</a><a href="/tags/matplotlib/">matplotlib</a></span></div></div></article><article><h2 class="article-title"><a href="/article/podcast/2018/Reading-about-Podcasts-Are-they-returning.html"><span>Reading About Podcasts - Are They Returning?</span></a></h2><div class="article-content"><div class="entry"><p>Podcasts are near and dear to my ♥ — But I imagine some of you know this by now if you’ve been reading this blog — The New Yorker wrote a long format piece about how <a href="https://www.newyorker.com/magazine/2018/11/19/how-podcasts-became-a-seductive-and-sometimes-slippery-mode-of-storytelling" target="_blank" rel="noopener">podcasts became a seductive way of storytelling</a> ♣ This is a nice read although centered on the major podcasts of the past years (the crime-investigation type).</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/podcast/">podcast</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/new-yorker/">new yorker</a><a href="/tags/longread/">longread</a></span></div></div></article><article><h2 class="article-title"><a href="/article/markdown/2018/Markdown-is-the-de-facto-language-for-writing-in-the-XXI-century.html"><span>Markdown Is the <i>De Facto</i> Language for Writing in the XXI Century</span></a></h2><div class="article-content"><div class="entry"><p>I’ve talked before about how much I use Markdown for my day to day writing • Heck, markdown powered this blog for a long time, even while <a href="https://www.sixhat.net/2-upgrades-site-estatico-e-markdown.html">running on Wordpress</a> • but now I decided to tell you how I use Markdown in different scenarios, and what the tools are</p><h3 id="Taking-notes-in-Markdown"><a href="#Taking-notes-in-Markdown" class="headerlink" title="Taking notes in Markdown"></a>Taking notes in Markdown</h3><p><a href="https://www.sixhat.net/tag/nvalt/">nvalt</a> • the clone and improved version of Notational Velocity • I use to write everything I need in Markdown • A cloud folder stores all my MD files and make them accessible everywhere • Even when I’m not on my computer and don’t have nvalt around, I still can edit the files • No more need for messing around with proprietary formats</p><h3 id="Blogging-in-Markdown"><a href="#Blogging-in-Markdown" class="headerlink" title="Blogging in Markdown"></a>Blogging in Markdown</h3><p>My blog runs on <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>, a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> static content blogging platform • I write all posts in markdown • When I’m blogging I use any Markdown app installed on my computer or any simple code editor • I’m not fussy about it • It depends on the project I’m working on and the editor is the one open at the time of the writing • Hexo also has a plugin for editing post called <a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener">hexo-admin</a> • Pretty basic, but if you wan’t to use something simple and dedicated to your blogging experience, it works</p><h3 id="Fast-Markdown-documents"><a href="#Fast-Markdown-documents" class="headerlink" title="Fast Markdown documents"></a>Fast Markdown documents</h3><p>When I need to write an exam, a letter, or even a journal paper I gravitate towards using <a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> • A Markdown editor with default styles so nice that I created a couple of my own based on the defaults offered • This allows me to write something “academic” fast enough without thinking about extra shenanigans • It replaced writing in LaTeX for most of my document needs</p><h3 id="Markdown-Presentation"><a href="#Markdown-Presentation" class="headerlink" title="Markdown Presentation"></a>Markdown Presentation</h3><p>For years I’ve been a fan of Keynote but I started using Markdown for most of my work • I mainly use two tools • <a href="https://yhatt.github.io/marp/" target="_blank" rel="noopener">Marp</a> for quick presentations that don’t require much thought and <a href="https://webpro.github.io/reveal-md/" target="_blank" rel="noopener">reveal-md</a> for presentations that need more interaction and that I can release as a mini-website for my students to experiment with</p><p>The main reason to abandon keynote has to do with code snippets and code highlight • In keynote you can’t do it • You have to prepare your code somewhere else and hope that when copy and pasting everything is style properly • That or making screenshots • With Markdown you write the code inside a code section and the renderer will highlight it for you • Both Marp and Reveal-md take care of it</p><p>The reason I like reveal-md these days is that it allows an extra layer of presentation: Interaction •I can mix Markdown with HTML and Javascript and create some interesting interactions for my users • I always found it somewhat problematic that the interactive presentations I gave to students were flattened out when producing slides to take home</p><p>With reveal-md I export my presentations to a static website and I can either give them the zip file or upload the contents online to my server • In any case the copy they get is not crippled by the lack of features of the format • Reveal-MD is an helper project to work with Markdown files in RevealJS • It is must-have because it makes it so much easier to be productive • If I had to write the entirety of a presentation in HTML I wouldn’t be using it • Markdown gives me the freedom to write content first and then add the interaction needed via JavaScript making slides unique</p><h3 id="Markdown-in-Data-Science-Notebooks"><a href="#Markdown-in-Data-Science-Notebooks" class="headerlink" title="Markdown in Data Science Notebooks"></a>Markdown in Data Science Notebooks</h3><p><a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter Notebooks</a> support Markdown cells and this makes the code much nicer to read • Everything is formatted correctly and you don’t need to hurt your eyes in pages trying to resemble fixe-space typewriters from the pre-computer days</p><h3 id="Markdown-Logs"><a href="#Markdown-Logs" class="headerlink" title="Markdown Logs"></a>Markdown Logs</h3><p>My backup system uses rsync and a handful of locations && hard drives • To keep everything working correctly I tend to log events like <strong>backup start</strong>, <strong>backup end</strong>, <strong>error copying</strong>, among others • And from time to time I like to manually read the log to see if everything is correct • Instead of having a TXT file, I log everything in MD format and to read I see a converted format in HTML • Much easier to spot problems</p><h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Markdown is not perfect and somethings from other environments might be missing, but it becomes handy as soon as you adopt the semantic conventions of the language • You end using them even if not intending to render them * The terseness of Markdown makes it one of the most useful languages/conventions to know and use in the XXI century</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/markdown/">markdown</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/nvalt/">nvalt</a><a href="/tags/node/">node</a><a href="/tags/hexo/">hexo</a><a href="/tags/nodejs/">nodejs</a><a href="/tags/typora/">typora</a><a href="/tags/revealjs/">revealjs</a><a href="/tags/reveal-md/">reveal-md</a><a href="/tags/jupyter/">jupyter</a><a href="/tags/rsync/">rsync</a></span></div></div></article><nav class="pagination"><a href="/page/2/" class="pagination-next">Next</a></nav></main><footer class="site-footer"><header><nav class="site-navigation"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li></ul></nav></header><p class="site-info">© 2019 David Sousa-Rodrigues</p></footer><script type="application/javascript">!function(e,a,t,n,g,c,o){e.GoogleAnalyticsObject="ga",e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="//www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script"),ga("create","UA-1764730-11","auto"),ga("send","pageview")</script></div><script type="application/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:"ca-pub-5261155233248836",enable_page_level_ads:!0})</script></body></html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+	
+	<title>Complexity of David | Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</title>
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://adservice.google.pt">
+	<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+	
+	<meta name="author" content="David Sousa-Rodrigues">
+	
+
+	
+	<meta name="description" content="Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.">
+	
+
+	
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	
+
+	<meta property="og:site_name" content="Complexity of David">
+
+	
+	<meta property="og:image" content="/favicon.ico">
+	
+
+	<link href="/favicon.ico" rel="icon">
+	<link rel="alternate" href="/atom.xml" title="Complexity of David" type="application/atom+xml">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Complexity of David</a>
+    </h1>
+    <p class="site-description">Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</p>
+  </div>
+</header>
+
+    <main class="site-main posts-loop">
+    
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/Wasm-to-stay.html"><span>Wasm to Stay</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>It is fast && it is creepy because it will be even more difficult to know if certain websites are doing something wrong (IF YOU DON’T KNOW, TH3Y ARE), and is it THIS THING the way of the future. Why? … Because. Wasm, the <strong>WebAssembly language</strong> is here to stay. That does not mean that we have to like it. But we’ll live with it if we want the browser window to be something more than a browser window. The <a href="https://www.w3.org/blog/news/archives/8123" target="_blank" rel="noopener">W3C just published the official WASM recommendations</a> and that means basically NOTHING. Except it does. IT IS OFFICIAL. We are now in the era of the cryptic web. Let’s all hug and keep on coding strange digital currency miners and exhaust our poor users cpus with crappy code.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/A-sound-of-time.html"><span>A Sound of Time</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>The guardian has a piece on Podcast, the past, the present and the future or <a href="https://www.theguardian.com/commentisfree/2019/nov/30/podcasting-fifteenth-years-old-corporate-greed-threat" target="_blank" rel="noopener">How podcasting is falling prey to the broadcast companies</a>.</p>
+<p>But the internet is a marvelous place, because if you choose your pills right, you’ll be able to jump from quality page to another quality page. Only if the authors you start with put some effort into it. And John Naughton did. You should go and read his readings.</p>
+<p>And if you follow my lead you’ll read <a href="https://www.cjr.org/special_report/building-honest-internet-public-interest.php" target="_blank" rel="noopener">Building a More Honest Internet</a> and maybe think a little about this. The future of the Internet is in danger of becoming a vast rubbish landscape. Or, we can think of new ways to reinvent it. Read it and think.</p>
+<p>Also worth reading is <a href="https://lpeblog.org/2019/11/25/the-second-wave-of-algorithmic-accountability/" target="_blank" rel="noopener">The Second Wave of Algorithmic Accountability</a>. It connects with the previous links and touches some interesting points on the ethics of modern technologies. The XXI century will not be about the <strong>CAN Tech do this</strong>, but instead about the <strong>SHOULD tech do it</strong>. The discussion has started.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/physicalcomputing/2019/send-data-asksensors-python.html"><span>Sending Data to AskSensors With Python</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p><a href="https://asksensors.com/" target="_blank" rel="noopener">AskSensors</a> is an online IoT dashboard service that allows you to track  data coming from your sensors. They have tutorials on the website to get you started, but for <code>raspberry pi</code> they went with an example using <code>node.js</code>. Can’t understand that <sic>. </sic></p>
+<p>In any case it isn’t difficult to write a python script that reads from your sensor and sends data to the AskSensors api. Here are my tips:</p>
+<ol>
+<li>In python use the easy to understand <code>requests</code> library.</li>
+<li>The URL endpoint to send data to is something like <a href="https://api.asksensors.com/write/API_KEY?module1=VALUE_1&module2=VALUE_2" target="_blank" rel="noopener">https://api.asksensors.com/write/API_KEY?module1=VALUE_1&module2=VALUE_2</a> <ol>
+<li>Make sure to replace the <strong>API_KEY</strong> and <strong>VALUE_1,2,xxx</strong> to the number and values of your application.</li>
+<li>The <strong>API_KEY</strong> is unique for each sensor you have. </li>
+<li>Each sensor can have several modules. For example the <code>DHT11</code> sensor reads both Temperature and Humidity. This means you have one device (sensor) sending two values to <code>module1</code> and <code>module2</code>, hence the previous url structure.</li>
+</ol>
+</li>
+<li>send data with <code>requests.get(URL of POINT 2)</code>.</li>
+<li>profit.</li>
+</ol>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+      
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/physicalcomputing/">physicalcomputing</a>
+    </span>
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/raspberrypi/">raspberrypi</a> <a href="/tags/iot/">iot</a> <a href="/tags/asksensors/">asksensors</a> <a href="/tags/requests/">requests</a> <a href="/tags/python/">python</a> <a href="/tags/dht11/">dht11</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/Back-to-school.html"><span>Back to School</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>And it’s that time of year again. </p>
+<p>Everything that needs to work is broken, every cog in the systems is stuck, and students demanding urgent action that we cannot provide. </p>
+<p>That’s the first week of classes. Keep calm and carry on.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/teaching/">teaching</a> <a href="/tags/classes/">classes</a> <a href="/tags/esad/">esad</a> <a href="/tags/work/">work</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/Mirroring-websites-is-a-pain.html"><span>Mirroring Websites Is a Pain</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Modern web is a pain to mirror, or to make a copy for future reference.<br>You have to go through every single page in a website and probably print it to keep a copy of what was there. </p>
+<p>I end up with mountains of Pdfs. And that sucks, namely when websites have the same title for every page. You manually have to come up with filenames for each of the pages you need to preserve and the all process is slow.</p>
+<p><a href="https://www.sixhat.net/wget-uma-versao-estatica-para-o-wordpress.html">Wget might be a solution</a>, and I’ve used in the past, but it isn’t ideal.</p>
+<p>The <code>--mirror</code> switch is not enough and you end up needing to go through the manual anyway to find out what each switch means.<br>This is because Wget is not a mirroring tool, but a general purpose one.</p>
+<p>Yes, I can hammer a screw in, but it isn’t the right tool for the job.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/como-a-estatistica-pode-enganar.html"><span>Como a Estatística Pode Enganar</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/B0y0Jc2t92M?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/uncategorized/2019/Constants-constants-and-time-is-ticking-on.html"><span>Constants, Constants, and Time Is Ticking On</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p><img src="/images/pasted-1.png" alt="dentist emoji"></p>
+<p>A <a href="https://www.theverge.com/2018/9/5/17822562/google-dataset-search-service-scholar-scientific-journal-open-data-access" target="_blank" rel="noopener">search engine for datasets</a>… _hm_ it would be interesting if not for the fact that most datasets are not that public anyway. But a good idea, although it crossed my readings one year too late. </p>
+<p>And if all cities are equal, at least under some magnifying (or should I say unifying) constant? <a href="https://www.citylab.com/transportation/2019/08/commute-time-city-size-transportation-urban-planning-history/597055/" target="_blank" rel="noopener">The Commuting Principle that Shaped Urban History</a> explains how <em>from ancient Rome to modern Atlanta, the shape of cities has been defined by the technologies that allow commuters to get to work in about 30 minutes</em>.</p>
+<p>And yes, it has been a long time. And I know it has been. But time is something that I don’t have. 1440 minutes of production per day. And you better make good use of those minutes. Something that I tend to forget constantly. </p>
+<p>And a side-note: I went to my dentist today and he asked about Brexit since I’ve lived in the UK for a couple of years. This crazy brexit mania is contagious but a train reck is better than the thought of the  dentist tools in my mouth, so I talked, and talked and… couldn’t escape his tools, like the no-deal brexit is certain.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/hustle/">hustle</a> <a href="/tags/data-science/">data science</a> <a href="/tags/search/">search</a> <a href="/tags/urbanism/">urbanism</a> <a href="/tags/brexit/">brexit</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+
+  <h2 class="article-title"><a href="/article/internet/2019/Moving-To-Github.html"><span>Moving to Github or Not</span></a></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>I’ve been wanting to move my web assets to Github for a long time. Partially because I’m downsizing my web presence (as many have noticed), and partially because of backup/versioning. </p>
+<p>This moving is going to be multi-step process and somethings might break. But everything should be completed soon (I hope).</p>
+<p>update: I’m back to my own server.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+      
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/internet/">internet</a>
+    </span>
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/github/">github</a> <a href="/tags/versioning/">versioning</a> <a href="/tags/hosting/">hosting</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+
+
+<nav class="pagination">
+  
+  
+  <a href="/page/2/" class="pagination-next">Next</a>
+  
+</nav>
+    </main>
+
+    <footer class="site-footer">
+    <header>
+<nav class="site-navigation">
+  <ul>
+    
+    <li><a href="/">
+        Home</a></li>
+    
+    <li><a href="/archives">
+        Archives</a></li>
+    
+  </ul>
+</nav>
+    </header>
+  <p class="site-info">
+    
+    © 2020 David Sousa-Rodrigues
+    
+  </p>
+</footer>
+    
+	<script>
+		(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+		h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+		l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+		r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+		n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+		A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+		sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+		void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+		(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+		sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+		a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+		ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+		!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+		y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+		d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+		a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+		trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+		(window,"UA-1764730-11",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+	</script>
+	
+
+  </div>
+  <script type="application/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5261155233248836",
+      enable_page_level_ads: true
+    });
+  </script>
+</body>
+</html>

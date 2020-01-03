@@ -1,2 +1,153 @@
-<!DOCTYPE HTML><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><title>Plotting More Than One Data Series in One-Liner | dave's reads worth sharing | Data Science, Machine Learning, Artificial Intelligence, Visualization, Complex Systems.</title><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://adservice.google.pt"><link rel="preconnect" href="https://googleads.g.doubleclick.net"><meta name="author" content="David Sousa-Rodrigues"><meta name="description" content="Searching the web for interesting readings that are worth sharing."><meta name="keywords" content="rcran,plots,R,tidyr,matplot"><meta id="viewport" name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta property="og:title" content="Plotting More Than One Data Series in One-Liner"><meta property="og:site_name" content="dave's reads worth sharing"><meta property="og:image" content="/favicon.ico"><link href="/favicon.ico" rel="icon"><link rel="alternate" href="/atom.xml" title="dave's reads worth sharing" type="application/atom+xml"><link rel="stylesheet" href="/css/style.css?__inline=true" media="screen" type="text/css"></head><body><div class="content"><header><div class="site-branding"><h1 class="site-title"><a href="/">dave's reads worth sharing</a></h1><p class="site-description">Data Science, Machine Learning, Artificial Intelligence, Visualization, Complex Systems.</p></div></header><main class="site-main posts-loop"><article><h2 class="article-title"><span>Plotting More Than One Data Series in One-Liner</span></h2><div class="article-content"><div class="entry"><picture><source srcset="/images/matplot-example.webp" type="image/webp"><img src="/images/matplot-example.png" alt="plot of mulitple data series in R"></picture><p>I already covered several ways to plot multiple data series in the same <code>R</code> plot, either using <a href="https://www.sixhat.n`et/plotting-multiple-data-series-in-r.html" target="_blank" rel="noopener"><strong>plot, points and lines</strong></a> or using <a href="https://www.sixhat.net/how-to-plot-multpile-data-series-with-ggplot.html"><strong>ggplot</strong></a> and using <strong>facets</strong>. What I didn’t show was probably the easiest (and I mean easiest), way to plot all data series in one plot. Using <strong>matplot</strong>!</p><p><strong>matplot</strong> is part of the <strong>graphics</strong> library and therefore is installed during your normal <code>R</code> installation. It does not need any further installation and you can use it with the usual plot parameters.</p><p>Assuming that you have a data frame <strong>df</strong> with <code>N</code> columns and <code>M</code> observations and that you want to plot all columns against the first column that will provide the <code>x</code> points.</p><pre><code>matplot(df[,1], df[, 2:ncol(df)], pch=19)
-</code></pre><p>The above command will plot multiple data series in <code>R</code> in the same plot without further problems and producing the above picture.</p><p>The only condition to plot data series with the above command is that the data frame needs to be wide format (and usually it is).</p><p>If your data is in the <em>narrow</em> format you need to <a href="https://www.sixhat.net/how-to-reshape-data-in-r.html">pivot the data to wide layout</a> before you can plot multiple data series. In <code>R</code>, the conversion between <em>wide</em> and <em>narrow</em> layouts of the data can be accomplished using the <a href="https://tidyr.tidyverse.org/" target="_blank" rel="noopener"><strong>tidyr</strong></a> package.</p></div></div><div class="article-footer"><div class="article-meta pull-left"><span class="post-categories"><i class="icon-categories"></i> <a href="/categories/data-science/">data science</a> </span><span class="post-tags"><i class="icon-tags"></i> <a href="/tags/rcran/">rcran</a><a href="/tags/plots/">plots</a><a href="/tags/R/">R</a><a href="/tags/tidyr/">tidyr</a><a href="/tags/matplot/">matplot</a></span></div></div></article></main><footer class="site-footer"><header><nav class="site-navigation"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li></ul></nav></header><p class="site-info">© 2019 David Sousa-Rodrigues</p></footer><script type="application/javascript">!function(e,a,t,n,g,c,o){e.GoogleAnalyticsObject="ga",e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="//www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script"),ga("create","UA-1764730-11","auto"),ga("send","pageview")</script></div><script type="application/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:"ca-pub-5261155233248836",enable_page_level_ads:!0})</script></body></html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+	
+	<title>Plotting More Than One Data Series in One-Liner | Complexity of David | Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</title>
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://adservice.google.pt">
+	<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+	
+	<meta name="author" content="David Sousa-Rodrigues">
+	
+
+	
+	<meta name="description" content="Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.">
+	
+
+	
+	
+	<meta name="keywords" content="rcran,plots,R,tidyr,matplot">
+	
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	
+	<meta property="og:title" content="Plotting More Than One Data Series in One-Liner">
+
+	<meta property="og:site_name" content="Complexity of David">
+
+	
+	<meta property="og:image" content="/favicon.ico">
+	
+
+	<link href="/favicon.ico" rel="icon">
+	<link rel="alternate" href="/atom.xml" title="Complexity of David" type="application/atom+xml">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Complexity of David</a>
+    </h1>
+    <p class="site-description">Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</p>
+  </div>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+
+  <h2 class="article-title"><span>Plotting More Than One Data Series in One-Liner</span></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <picture><source srcset="/images/matplot-example.webp" type="image/webp"><img src="/images/matplot-example.png" alt="plot of mulitple data series in R"></picture>
+
+<p>I already covered several ways to plot multiple data series in the same <code>R</code> plot, either using <a href="https://www.sixhat.net/plotting-multiple-data-series-in-r.html"><strong>plot, points and lines</strong></a> or using <a href="https://www.sixhat.net/how-to-plot-multpile-data-series-with-ggplot.html"><strong>ggplot</strong></a> and using <strong>facets</strong>.  What I didn’t show was probably the easiest (and I mean easiest), way to plot all data series in one plot. Using <strong>matplot</strong>!</p>
+<p><strong>matplot</strong> is part of the <strong>graphics</strong> library and therefore is installed during your normal <code>R</code> installation. It does not need any further installation and you can use it with the usual plot parameters.</p>
+<p>Assuming that you have a data frame <strong>df</strong> with <code>N</code> columns and <code>M</code> observations and that you want to plot all columns against the first column that will provide the <code>x</code> points.</p>
+<pre><code>matplot(df[,1], df[, 2:ncol(df)], pch=19)
+</code></pre><p>The above command will plot multiple data series in <code>R</code> in the same plot without further problems and producing the above picture.</p>
+<p>The only condition to plot data series with the above command is that the data frame needs to be wide format (and usually it is).</p>
+<p>If your data is in the <em>narrow</em> format you need to <a href="https://www.sixhat.net/how-to-reshape-data-in-r.html">pivot the data to wide layout</a> before you can plot multiple data series. In <code>R</code>, the conversion between <em>wide</em> and <em>narrow</em> layouts of the data can be accomplished using the <a href="https://tidyr.tidyverse.org/" target="_blank" rel="noopener"><strong>tidyr</strong></a> package.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+      
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/data-science/">data science</a>
+    </span>
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/rcran/">rcran</a> <a href="/tags/plots/">plots</a> <a href="/tags/R/">R</a> <a href="/tags/tidyr/">tidyr</a> <a href="/tags/matplot/">matplot</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+    <header>
+<nav class="site-navigation">
+  <ul>
+    
+    <li><a href="/">
+        Home</a></li>
+    
+    <li><a href="/archives">
+        Archives</a></li>
+    
+  </ul>
+</nav>
+    </header>
+  <p class="site-info">
+    
+    © 2020 David Sousa-Rodrigues
+    
+  </p>
+</footer>
+    
+	<script>
+		(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+		h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+		l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+		r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+		n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+		A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+		sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+		void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+		(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+		sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+		a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+		ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+		!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+		y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+		d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+		a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+		trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+		(window,"UA-1764730-11",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+	</script>
+	
+
+  </div>
+  <script type="application/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5261155233248836",
+      enable_page_level_ads: true
+    });
+  </script>
+</body>
+</html>

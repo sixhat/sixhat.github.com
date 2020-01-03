@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+	
+	<title>Why Is the for Loop Faster in This Javascript? | Complexity of David | Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</title>
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://adservice.google.pt">
+	<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+	
+	<meta name="author" content="David Sousa-Rodrigues">
+	
+
+	
+	<meta name="description" content="Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.">
+	
+
+	
+	
+	<meta name="keywords" content="javascript,loops,arrays,testing">
+	
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	
+	<meta property="og:title" content="Why Is the for Loop Faster in This Javascript?">
+
+	<meta property="og:site_name" content="Complexity of David">
+
+	
+	<meta property="og:image" content="/favicon.ico">
+	
+
+	<link href="/favicon.ico" rel="icon">
+	<link rel="alternate" href="/atom.xml" title="Complexity of David" type="application/atom+xml">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Complexity of David</a>
+    </h1>
+    <p class="site-description">Data Science, Machine Learning, Artificial Intelligence, Visualization, and Complex Systems.</p>
+  </div>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+
+  <h2 class="article-title"><span>Why Is the for Loop Faster in This Javascript?</span></h2>
+
+
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>I’ve measured and tested and what not <a href="https://www.sixhat.net/comparing-javascript-loops-performance-for-do-while-for-in.html">javascript loops</a> and always came to the conclusion that we don’t know how Javascript is going to behave.</p>
+<p>In the following example function <code>f1</code> is substantially faster than function <code>f2</code>. Can’t understand why.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">tic</span>(<span class="params"></span>) </span>{</span><br><span class="line">  the_time = performance.now()</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toc</span>(<span class="params"></span>) </span>{</span><br><span class="line">  <span class="built_in">console</span>.log(performance.now() - the_time)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params">z</span>) </span>{</span><br><span class="line">  <span class="keyword">let</span> len = z;</span><br><span class="line">  <span class="keyword">let</span> buff = []</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i < len; i++) {</span><br><span class="line">    buff[i] = i;</span><br><span class="line">  }</span><br><span class="line">  <span class="keyword">return</span> buff;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params">z</span>) </span>{</span><br><span class="line">  <span class="keyword">let</span> len = z;</span><br><span class="line">  <span class="keyword">let</span> buff = []</span><br><span class="line">  <span class="keyword">while</span> (len--) {</span><br><span class="line">    buff[len] = len;</span><br><span class="line">  }</span><br><span class="line">  <span class="keyword">return</span> buff</span><br><span class="line">}</span><br><span class="line">tic(); f1(<span class="number">2</span> << <span class="number">20</span>); toc();</span><br><span class="line">tic(); f2(<span class="number">2</span> << <span class="number">20</span>); toc();</span><br></pre></td></tr></table></figure>
+<p>Your Results:</p>
+<script>
+function tic() {
+  the_time = performance.now();
+}
+
+function toc() {
+  document.write(Math.round(performance.now() - the_time));
+}
+
+function f1(z) {
+  let len = z;
+  let buff = []
+  for (let i = 0; i < len; i++) {
+    buff[i]=i;
+  }
+  return buff;
+}
+
+function f2(z) {
+  let len = z;
+  let buff = []
+  while (len--) {
+    buff[len] = len;
+  }
+  return buff
+}
+document.write("f1: ");
+tic(); f1(2 << 20); toc();
+document.write("<br>f2: ");
+tic(); f2(2 << 20); toc();
+</script>
+
+<p>Normally I would say that the reversed while would be faster. It has been in other instances. But in this case we want to create an array with numbers from <code>0</code> to <code>z-1</code>. In this case the for loop is much faster (tested in Chrome, Firefox, Opera). What is going on? Is it a caches problem where JS engines expect the “straight” order and not the reverse one?</p>
+<h3 id="update"><a href="#update" class="headerlink" title="update"></a>update</h3><p>What if we pre-allocate the size of the buffer before iterating over it as in function <code>f2</code>. This would lead to the new function <code>f2_new</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2_new</span>(<span class="params">z</span>) </span>{</span><br><span class="line">    <span class="keyword">var</span> len = z;</span><br><span class="line">    <span class="keyword">var</span> buff = [];</span><br><span class="line">    buff.length=len;</span><br><span class="line">    <span class="keyword">while</span> (len--) {</span><br><span class="line">        buff[len] = len;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> buff;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>Notice that I’m creating a buffer with the correct length before looping over it. If you run this version you’ll get the fastest while loop.</p>
+<script>
+function f2_new(z) {
+  var len = z;
+  var buff = [];
+  buff.length=len;
+  while (len--) {
+      buff[len] = len;
+  }
+  return buff;
+}
+document.write("f2_new: ");
+tic(); f1(2 << 20); toc();
+</script>
+
+<p>This version is now on par with the for loop and in some benchmarks it is substantially faster. So, order restored in the realm of Javascript. Me happy again.</p>
+
+      
+    </div>
+  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+    
+      
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/programming/">programming</a>
+    </span>
+    
+    
+    
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/javascript/">javascript</a> <a href="/tags/loops/">loops</a> <a href="/tags/arrays/">arrays</a> <a href="/tags/testing/">testing</a>
+    </span>
+    
+    </div>
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+    <header>
+<nav class="site-navigation">
+  <ul>
+    
+    <li><a href="/">
+        Home</a></li>
+    
+    <li><a href="/archives">
+        Archives</a></li>
+    
+  </ul>
+</nav>
+    </header>
+  <p class="site-info">
+    
+    © 2020 David Sousa-Rodrigues
+    
+  </p>
+</footer>
+    
+	<script>
+		(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+		h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+		l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+		r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+		n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+		A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+		sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+		void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+		(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+		sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+		a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+		ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+		!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+		y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+		d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+		a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+		trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+		(window,"UA-1764730-11",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+	</script>
+	
+
+  </div>
+  <script type="application/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5261155233248836",
+      enable_page_level_ads: true
+    });
+  </script>
+</body>
+</html>
